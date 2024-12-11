@@ -7,9 +7,11 @@ export class ItemTransferEvent extends PluginEvent {
         public player: Player,
         public fromInventory: Inventory,
         public fromIndex: number,
-        public toInventory: Inventory,
-        public toIndex: number,
-        public count: number
+        public to: {
+            inventory: Inventory,
+            index: number,
+            count: number
+        }[]
     ) {
         super();
     };
