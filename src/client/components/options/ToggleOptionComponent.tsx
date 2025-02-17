@@ -13,7 +13,7 @@ export default function ToggleOptionComponent(O: {
     return <GameOptionComponent class="option-btn" description={O.description ?? ""}
                                 action={() => state[1](+!state[0])}>
         <OptionValueText>
-            {typeof O.text === "function" ? O.text(!!state[0]) : O.text + (state[0] ? ": ON" : ": OFF")}
+            {(typeof O.text === "function" ? O.text(!!state[0]) : O.text) + (state[0] ? ": ON" : ": OFF")}
         </OptionValueText>
     </GameOptionComponent>;
 }
