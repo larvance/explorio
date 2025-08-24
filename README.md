@@ -37,7 +37,7 @@ Explorio is a 2D block game
 
 ## What's a client and where to find it?
 
-The client is hosted statically by GitHub Pages on https://larvance.github.io/explorio
+The client is hosted statically by GitHub Pages on https://mc.larvance.com
 
 You can also find hosted clients outside GitHub Pages and use them. **Though keep in mind that using third party clients
 is risky.**
